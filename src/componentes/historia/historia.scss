@@ -1,0 +1,119 @@
+@import '../../global.scss';
+
+.about{
+    background-color: white;
+    display:flex;
+    height: 100vh;
+    @include mobile{
+        display: block;
+    }
+    .left{
+        flex: 0.7;  
+        overflow: hidden;
+        margin-top: 40px;
+        @include mobile{
+            flex:auto;
+        }
+        .container{
+            width: 90%;
+            height: 90%;
+            padding-left: 50px;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+            h2{
+                font-size: 35px;
+                padding-bottom: 20px;
+            }
+
+            h3{
+                font-size: 35px;
+                padding-top: 20px;
+                padding-bottom: 20px;  
+                text-align: center;
+            }
+
+            p{
+                font-size: 20px;
+            }
+        }
+
+        .imgContainer{
+            width: 55rem;
+            height: 11rem;
+            margin:auto ;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            overflow: hidden;
+            
+            @include mobile{
+                width: 25rem;
+                height: 30rem;
+                flex-direction: column;
+                align-items: center;
+              } 
+            img{
+               width: 80%;
+               margin-right: 40px;
+               object-fit: cover;
+               border-radius: 10px;
+               border: 3px solid $mainColor;
+               @include mobile{
+               margin-bottom: 10px;
+              } 
+    
+            }
+         }
+
+
+    }
+
+    .right{
+        flex: 0.3;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        @include mobile{
+            flex: auto;
+        }
+
+        .item{
+            width: 420px;
+            height: 590px;
+            border-radius: 20px;
+            margin:10px 10px ;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            @include mobile{
+               display: none;
+            }
+            
+
+            img{
+            
+                width: 90%;
+                height: 90%;
+                object-fit: cover;
+                z-index: 1;
+                border: 5px solid $mainColor;
+                border-radius: 20px;
+            }
+    
+            
+
+        h3{
+            position: absolute;
+            font-size: 20px;
+            color: white;
+        }
+
+        }
+
+    }
+  
+}
