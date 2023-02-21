@@ -13,7 +13,7 @@ const Nav = ({ menuOpen, setMenuOpen }) => {
           </div>
           <div className="itemContainer">
             <FaGofore className="icon" />
-            <span>leitochaso10@gmail.com</span>
+            <span>https://trabajo-practico-nine.vercel.app/</span>
           </div>
         </div>
         <div className="right">
